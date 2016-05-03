@@ -32,7 +32,8 @@ HEADERS  += mainwindow.h \
     testimonials.h \
     adminlogin.h \
     buy.h \
-    admin.h
+    admin.h \
+    queue.h
 
 FORMS    += mainwindow.ui \
     help.ui \
@@ -42,3 +43,6 @@ FORMS    += mainwindow.ui \
     testimonials.ui \
     adminlogin.ui \
     buy.ui
+
+DISTFILES += \
+    customers.txt
