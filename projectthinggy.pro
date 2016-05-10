@@ -21,7 +21,8 @@ SOURCES += main.cpp\
     testimonials.cpp \
     adminlogin.cpp \
     buy.cpp \
-    admin.cpp
+    admin.cpp \
+    adminwindow.cpp
 
 HEADERS  += mainwindow.h \
     customer.h \
@@ -33,7 +34,8 @@ HEADERS  += mainwindow.h \
     adminlogin.h \
     buy.h \
     admin.h \
-    queue.h
+    queue.h \
+    adminwindow.h
 
 FORMS    += mainwindow.ui \
     help.ui \
@@ -42,7 +44,11 @@ FORMS    += mainwindow.ui \
     policy.ui \
     testimonials.ui \
     adminlogin.ui \
-    buy.ui
+    buy.ui \
+    adminwindow.ui
 
 DISTFILES += \
     customers.txt
+
+RESOURCES += \
+    data.qrc

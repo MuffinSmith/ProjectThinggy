@@ -128,12 +128,12 @@ public:
     {
         Customer obj;
 
-        QFile inputFile("Customers.txt");
+        QFile inputFile(":/TextFiles/customers.txt");
         if (inputFile.open(QIODevice::ReadOnly))
         {
             QTextStream in(&inputFile);
 
-            while (!in.atEnd()) // && itemPtr!=NULL
+            while (!in.atEnd())
             {
                 QString line = in.readLine();
                 obj.compName = line;
@@ -156,6 +156,11 @@ public:
             }
             inputFile.close();
         }
+    }
+
+    void PrintList()
+    {
+        list.PrintQue();
     }
 
     ///

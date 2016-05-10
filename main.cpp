@@ -9,5 +9,15 @@ int main(int argc, char *argv[])
     MainWindow w;
     w.show();
 
+    ///
+    /// \brief List of customers created from customers.txt initialized in
+    /// main.cpp
+    ///
+
+    CustomerList CList;
+    CList.CreateListFromFile();
+
+    CList.PrintList();
+
     return a.exec();
 }

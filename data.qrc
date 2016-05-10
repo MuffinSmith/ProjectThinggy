@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/TextFiles">
+        <file>customers.txt</file>
+    </qresource>
+</RCC>
