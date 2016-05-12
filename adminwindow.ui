@@ -22,6 +22,52 @@
      <height>451</height>
     </rect>
    </property>
+   <property name="minimumSize">
+    <size>
+     <width>861</width>
+     <height>451</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>861</width>
+     <height>451</height>
+    </size>
+   </property>
+   <property name="sizeAdjustPolicy">
+    <enum>QAbstractScrollArea::AdjustIgnored</enum>
+   </property>
+   <attribute name="horizontalHeaderMinimumSectionSize">
+    <number>33</number>
+   </attribute>
+   <attribute name="verticalHeaderDefaultSectionSize">
+    <number>30</number>
+   </attribute>
+   <column>
+    <property name="text">
+     <string>Company Name</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Street Address</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>City Address</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Rating</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Priority</string>
+    </property>
+   </column>
   </widget>
   <widget class="QLineEdit" name="searchBar">
    <property name="geometry">
@@ -31,45 +77,6 @@
      <width>511</width>
      <height>21</height>
     </rect>
-   </property>
-  </widget>
-  <widget class="QCheckBox" name="keyCust_CheckBox">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>510</y>
-     <width>111</width>
-     <height>19</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Key Customers</string>
-   </property>
-  </widget>
-  <widget class="QCheckBox" name="nonKeyCust_CheckBox">
-   <property name="geometry">
-    <rect>
-     <x>230</x>
-     <y>510</y>
-     <width>131</width>
-     <height>19</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Non-Key Customers</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="showAll_Button">
-   <property name="geometry">
-    <rect>
-     <x>590</x>
-     <y>490</y>
-     <width>281</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Show All</string>
    </property>
   </widget>
   <widget class="QPushButton" name="search_Button">
@@ -85,6 +92,65 @@
     <string>Search</string>
    </property>
   </widget>
+  <widget class="QPushButton" name="showAll_Button">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>500</y>
+     <width>281</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Show All</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="KeyButton">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>520</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Key Customers</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="NonKeyButton">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>480</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Non-Key Customers</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="AddCompButton">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>480</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Add Company</string>
+   </property>
+  </widget>
+  <zorder>searchBar</zorder>
+  <zorder>search_Button</zorder>
+  <zorder>showAll_Button</zorder>
+  <zorder>tableWidget</zorder>
+  <zorder>KeyButton</zorder>
+  <zorder>NonKeyButton</zorder>
+  <zorder>AddCompButton</zorder>
  </widget>
  <resources/>
  <connections/>

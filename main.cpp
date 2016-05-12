@@ -14,10 +14,15 @@ int main(int argc, char *argv[])
     /// main.cpp
     ///
 
-    CustomerList CList;
-    CList.CreateListFromFile();
+//    CustomerList CList;
+//    Customer *ptr=NULL;
 
-    CList.PrintList();
+//    CList.CreateListFromFile();
+
+//    ptr=CList.list.returnObj();
+//    ptr->printCustomer();
+
+//    CList.PrintList();
 
     return a.exec();
 }

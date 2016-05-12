@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "adminwindow.h"
+#include "loginfail.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -52,6 +53,7 @@ void MainWindow::on_pushButton_3_clicked()
     Contact contactWin;
     contactWin.setModal(true);
     contactWin.exec();
+    show();
 }
 
 void MainWindow::on_pushButton_4_clicked()
@@ -104,6 +106,10 @@ void MainWindow::on_pushButton_6_clicked()
         AdminWindow adminWin;
         adminWin.show();
         adminWin.exec();
+    }else{
+        LoginFail failWin;
+        failWin.show();
+        failWin.exec();
     }
     show();
 }

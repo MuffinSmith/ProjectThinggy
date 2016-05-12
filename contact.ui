@@ -131,7 +131,7 @@ p, li { white-space: pre-wrap; }
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>../../../../OneDrive/Pictures/Saved Pictures/toka.jpg</pixmap>
+    <pixmap resource="data.qrc">:/Images/toka.jpg</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -144,6 +144,8 @@ p, li { white-space: pre-wrap; }
   <zorder>label_5</zorder>
   <zorder>textBrowser</zorder>
  </widget>
- <resources/>
+ <resources>
+  <include location="data.qrc"/>
+ </resources>
  <connections/>
 </ui>

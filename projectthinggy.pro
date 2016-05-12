@@ -22,7 +22,8 @@ SOURCES += main.cpp\
     adminlogin.cpp \
     buy.cpp \
     admin.cpp \
-    adminwindow.cpp
+    adminwindow.cpp \
+    loginfail.cpp \
 
 HEADERS  += mainwindow.h \
     customer.h \
@@ -35,7 +36,8 @@ HEADERS  += mainwindow.h \
     buy.h \
     admin.h \
     queue.h \
-    adminwindow.h
+    adminwindow.h \
+    loginfail.h \
 
 FORMS    += mainwindow.ui \
     help.ui \
@@ -45,7 +47,8 @@ FORMS    += mainwindow.ui \
     testimonials.ui \
     adminlogin.ui \
     buy.ui \
-    adminwindow.ui
+    adminwindow.ui \
+    loginfail.ui \
 
 DISTFILES += \
     customers.txt

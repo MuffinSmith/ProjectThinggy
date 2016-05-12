@@ -8,6 +8,9 @@ using namespace std;
 
 const int DEFAULT_SIZE=15;
 
+///
+/// \brief The Queue_Error class is a warpper class for catching errors
+///
 
 class Queue_Error
 {
@@ -18,6 +21,9 @@ public:
     string getErrorMessage() const { return error; }
 };
 
+///
+/// \brief Queue is a FIFO list template
+///
 
 template<class T>
 class Queue
@@ -26,18 +32,22 @@ public:
     ///
     ///       CONSTRUCTOR / DESTRUCTOR
     /// DEFAULT: Creates an empty Queue with the default size (15)
-    Queue(): HPtr(NULL), TPtr(NULL), count(0), MAX_SIZE(DEFAULT_SIZE){}
+    Queue(): HPtr(NULL), TPtr(NULL), count(0), MAX_SIZE(DEFAULT_SIZE)
+    {iterate = HPtr;}
 
     /// Creates a Queue with an explicitly defined maximum size
-    Queue(int maxSize): HPtr(NULL), TPtr(NULL), count(0), MAX_SIZE(maxSize){}
+    Queue(int maxSize): HPtr(NULL), TPtr(NULL), count(0), MAX_SIZE(maxSize)
+    {iterate = HPtr;}
 
     /// Copies a Queue and increases size ** Queue < oldQ **
     Queue(Queue &oldQ, int maxSize): HPtr(oldQ.HPtr), TPtr(oldQ.TPtr),
-        count(oldQ.count), MAX_SIZE(maxSize){}
+        count(oldQ.count), MAX_SIZE(maxSize)
+    {iterate = HPtr;}
 
     /// Exact copy of a Queue
     Queue(Queue &oldQ): HPtr(oldQ.HPtr), TPtr(oldQ.TPtr), count(oldQ.count),
-        MAX_SIZE(oldQ.MAX_SIZE){}
+        MAX_SIZE(oldQ.MAX_SIZE)
+    {iterate = HPtr;}
 
     ~Queue(){}
     ///
@@ -58,6 +68,7 @@ public:
             if(isEmpty())
             {
                 HPtr = newItem;
+                iterate = HPtr;
             }else
             {
                 TPtr->next = newItem;
@@ -92,6 +103,10 @@ public:
             delete temp;
         }
     }
+
+    void getNext()
+    {iterate=iterate->next;}
+
     ///
     ///
     ///       ACCESSORS
@@ -127,19 +142,27 @@ public:
     bool isFull() const
     {return (count >= MAX_SIZE);}
 
+    T* returnObj()
+    {
+        T *ptr=&iterate->item;
+        return ptr;
+    }
+
 private:
     ///
     ///       DATA MEMBERS
     ///
     struct Node{
-        T item;                 /// data stored
-        Node *next;             /// points to next node
+        T item;                 /// \brief data stored
+        Node *next;             /// \brief points to next node
     };
 
-    Node *HPtr;                 /// head pointer
-    Node *TPtr;                 /// tail pointer
-    int count;                  /// size of queue
-    const int MAX_SIZE;         /// maximum number of nodes
+    Node *iterate;              /// \brief iterator to access nodes
+
+    Node *HPtr;                 /// \brief head pointer
+    Node *TPtr;                 /// \brief tail pointer
+    int count;                  /// \brief size of queue
+    const int MAX_SIZE;         /// \brief maximum number of nodes
 };
 
 

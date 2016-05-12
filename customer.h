@@ -20,13 +20,13 @@ using namespace std;
 class Customer{
 public:
     ///
-    /// CONSTRUCTORS / DESTRUCTORS
+    /// \brief CONSTRUCTORS / DESTRUCTORS
     ///
 
-    /// Default constructor
+    /// \brief Default constructor
     Customer() {compName=streetAd=cityAd=rating=keyCust=" ";}
 
-    /// Non-default cconstructor
+    /// \brief Non-default cconstructor
     Customer(QString nameIn, QString streetIn, QString cityIn,
                  QString ratingIn, QString keyIn)
     {
@@ -40,7 +40,7 @@ public:
     ~Customer() {}
 
     ///
-    /// MUTATORS
+    /// \brief MUTATORS
     ///
 
     void changeName(QString nameIn) {compName=nameIn;}
@@ -54,7 +54,7 @@ public:
     }
 
     ///
-    /// ACCESSORS
+    /// \brief ACCESSORS
     ///
 
     QString getName(void) const {return compName;}
@@ -75,7 +75,7 @@ public:
     }
 
     ///
-    /// OPERATOR OVERLOADS
+    /// \brief OPERATOR OVERLOADS
     ///
 
     friend ostream& operator <<(ostream& out, Customer obj)
@@ -102,7 +102,8 @@ public:
 
         return *this;
     }
-    /// Data Members
+    ///
+    /// \brief Data Members
     ///
 
     QString compName;       /// Name of Company

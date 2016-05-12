@@ -47,7 +47,7 @@
     <string extracomment="Your administrator password"/>
    </property>
    <property name="inputMethodHints">
-    <set>Qt::ImhNoPredictiveText|Qt::ImhSensitiveData</set>
+    <set>Qt::ImhNoAutoUppercase|Qt::ImhNoPredictiveText|Qt::ImhSensitiveData</set>
    </property>
    <property name="text">
     <string>Password</string>
@@ -112,7 +112,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>../../../../OneDrive/Pictures/Saved Pictures/eye.jpg</pixmap>
+    <pixmap resource="data.qrc">:/Images/eye.jpg</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -124,7 +124,9 @@
   <zorder>usernameSlot</zorder>
   <zorder>label</zorder>
  </widget>
- <resources/>
+ <resources>
+  <include location="data.qrc"/>
+ </resources>
  <connections>
   <connection>
    <sender>buttonBox</sender>
