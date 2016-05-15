@@ -8,10 +8,6 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-
-    QPixmap pix("C:/Users/cody5/OneDrive/Pictures/Saved Pictures/kaneki.jpg");
-
-    ui->label_3->setPixmap(pix);
 }
 
 MainWindow::~MainWindow()
