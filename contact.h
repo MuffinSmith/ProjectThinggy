@@ -15,6 +15,9 @@ public:
     explicit Contact(QWidget *parent = 0);
     ~Contact();
 
+private slots:
+    void on_pushButton_clicked();
+
 private:
     Ui::Contact *ui;
 };

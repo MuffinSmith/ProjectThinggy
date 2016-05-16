@@ -11,12 +11,16 @@ AdminLogin::AdminLogin(QWidget *parent) :
     ui(new Ui::AdminLogin)
 {
     ui->setupUi(this);
+
+    ui->label->setText("<font color='yellow'>Administrator Login</font>");
 }
 
 AdminLogin::~AdminLogin()
 {
     delete ui;
 }
+
+
 
 void AdminLogin::on_buttonBox_clicked(QAbstractButton *button)
 {

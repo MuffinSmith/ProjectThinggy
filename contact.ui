@@ -137,12 +137,26 @@ p, li { white-space: pre-wrap; }
     <bool>true</bool>
    </property>
   </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>310</y>
+     <width>111</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Return to Program</string>
+   </property>
+  </widget>
   <zorder>label_3</zorder>
   <zorder>label</zorder>
   <zorder>label_2</zorder>
   <zorder>label_4</zorder>
   <zorder>label_5</zorder>
   <zorder>textBrowser</zorder>
+  <zorder>pushButton</zorder>
  </widget>
  <resources>
   <include location="data.qrc"/>

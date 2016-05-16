@@ -69,9 +69,23 @@
     <bool>true</bool>
    </property>
   </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>300</y>
+     <width>121</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Return to Program</string>
+   </property>
+  </widget>
   <zorder>Picture</zorder>
   <zorder>label</zorder>
   <zorder>label_2</zorder>
+  <zorder>pushButton</zorder>
  </widget>
  <resources>
   <include location="data.qrc"/>

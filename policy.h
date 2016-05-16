@@ -15,6 +15,9 @@ public:
     explicit Policy(QWidget *parent = 0);
     ~Policy();
 
+private slots:
+    void on_pushButton_clicked();
+
 private:
     Ui::Policy *ui;
 };

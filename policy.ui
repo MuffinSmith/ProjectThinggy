@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>650</width>
-    <height>350</height>
+    <width>523</width>
+    <height>158</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -32,6 +32,35 @@
    </property>
    <property name="text">
     <string>Our Guarantee &amp; Policy-</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>70</y>
+     <width>481</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>If you paid money for this software; like, for real, actual money, then you got totes dunked on.</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>120</y>
+     <width>111</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Return to Program</string>
    </property>
   </widget>
  </widget>
