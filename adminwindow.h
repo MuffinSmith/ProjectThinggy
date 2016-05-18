@@ -3,6 +3,7 @@
 
 #include <QDialog>
 #include "customer.h"
+#include "addcompany.h"
 
 namespace Ui {
 class AdminWindow;
@@ -25,6 +26,8 @@ private slots:
     void on_KeyButton_clicked();
 
     void on_NonKeyButton_clicked();
+
+    void on_AddCompButton_clicked();
 
 private:
     Ui::AdminWindow *ui;

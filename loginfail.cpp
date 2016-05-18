@@ -6,6 +6,8 @@ LoginFail::LoginFail(QWidget *parent) :
     ui(new Ui::LoginFail)
 {
     ui->setupUi(this);
+
+    setWindowTitle("Failed Login Attempt");
 }
 
 LoginFail::~LoginFail()

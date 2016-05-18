@@ -6,6 +6,7 @@ Buy::Buy(QWidget *parent) :
     ui(new Ui::Buy)
 {
     ui->setupUi(this);
+    setWindowTitle("Buy Now!");
 }
 
 Buy::~Buy()

@@ -7,6 +7,8 @@ Testimonials::Testimonials(QWidget *parent) :
 {
     ui->setupUi(this);
 
+    setWindowTitle("Customer Testimonials");
+
     ui->label_2->setText("I've used this program for a good five minutes, and after spending such a<br>"
                          "long and arduous time reviewing the software at hand, I have only one<br>"
                          "thing to say about the safety features this program provides.<br>"

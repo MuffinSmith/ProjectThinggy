@@ -125,7 +125,7 @@
      <string notr="true">color: rgb(186, 25, 28);</string>
     </property>
     <property name="text">
-     <string>iCyberSecurity Inc</string>
+     <string>Anteku Security</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_7">
@@ -154,7 +154,7 @@
      <string notr="true">color: rgb(173, 21, 24);</string>
     </property>
     <property name="text">
-     <string>Making the most sketchy of  pornography sites safe once again.</string>
+     <string>Much Safe, Very Security - MSVS</string>
     </property>
     <property name="textFormat">
      <enum>Qt::PlainText</enum>

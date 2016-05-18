@@ -7,6 +7,8 @@ Help::Help(QWidget *parent) :
 {
     ui->setupUi(this);
 
+    setWindowTitle("Help");
+
     /*The following lines are used to fill in the labels. They are editted here because newlines are impossible in the UI editor.
     Please use HTML for formatting, as it cannot be mixed with C++ formating. <br> is the equivilant of a newline, for example.*/
 

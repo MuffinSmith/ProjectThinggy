@@ -24,6 +24,7 @@ SOURCES += main.cpp\
     admin.cpp \
     adminwindow.cpp \
     loginfail.cpp \
+    addcompany.cpp \
 
 HEADERS  += mainwindow.h \
     customer.h \
@@ -38,6 +39,7 @@ HEADERS  += mainwindow.h \
     queue.h \
     adminwindow.h \
     loginfail.h \
+    addcompany.h \
 
 FORMS    += mainwindow.ui \
     help.ui \
@@ -49,6 +51,7 @@ FORMS    += mainwindow.ui \
     buy.ui \
     adminwindow.ui \
     loginfail.ui \
+    addcompany.ui \
 
 DISTFILES += \
     customers.txt

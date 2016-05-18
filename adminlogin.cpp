@@ -10,7 +10,10 @@ AdminLogin::AdminLogin(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::AdminLogin)
 {
+    status = false;
     ui->setupUi(this);
+
+    setWindowTitle("Administrator Login");
 
     ui->label->setText("<font color='yellow'>Administrator Login</font>");
 }
